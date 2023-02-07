@@ -15,16 +15,17 @@
 body {
     font-family: "Poppins", sans-serif;
     display: grid;
+    justify-content: space-around;
     place-content: center;
-    color: white;
+    text-align: center;
     width: 100%;
     height: 100vh;
 
-    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    /* background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
     
     background-size: 200% 200%;
 
-    animation: movimiento 5s linear infinite alternate;
+    animation: movimiento 5s linear infinite alternate; */
 }
 
 @keyframes movimiento {
@@ -35,4 +36,40 @@ body {
     to {
         background-position: 100% 100%;
     }
+}
+
+.main-title{
+    padding-bottom: 1.5rem;
+}
+
+#get_note1, #get_note2, #get_note3{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 5.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btnCalculate{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnCalculate:hover{
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+.results{
+    padding-top: 1.5rem;
+}
+
+.result_container{
+    padding-top: 1.5rem;
 }

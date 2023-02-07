@@ -11,21 +11,33 @@
 
 <body>
 
-    <header>
-        <h1 class="main-title">Calculo de Notas</h1>
-    </header>
+    <div class="father_container">
 
-    <main>
+        <header>
+            <h1 class="main-title">Calculo de Notas</h1>
+        </header>
 
-        <div class="notes_container">
-            <input id="get_note1" type="number" placeholder="Nota 1">
-            <input id="get_note2" type="number" placeholder="Nota 2">
-            <input id="get_note3" type="number" placeholder="Nota 3">
-        </div>
+        <main>
+            <div class="notes_container">
+                <input id="get_note1" type="number" required>
+                <input id="get_note2" type="number" required>
+                <input id="get_note3" type="number" required>
+            </div>
 
-        <button id="btnCalculate">Calcular</button>
+            <div class="result_container">
+                <h2 id="result">Resultado: </h2>
+            </div>
+        </main>
 
-    </main>
+        <section class="results">
+            <p>Si desea recuperar, necesitas: </p>
+            <p>Para ganar necesitaras minimo: </p>
+            <p>Para ganar con honores necesitarias minimo: </p>
+        </section>
+
+        <button id="btnCalculate" class="btnCalculate">Calcular</button>
+
+    </div>
 
     <script src="./js/app.js"></script>
 </body>
